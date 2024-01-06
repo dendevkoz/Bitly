@@ -40,7 +40,7 @@ Python3 должен быть уже установлен.
 ```
 pip install -r requirements.txt
 ```
-### Как использовать###
+### Как использовать
 
 ```python
 import requests
@@ -74,8 +74,7 @@ def is_bitlink(user_url, headers):
 
 def main(user_url):
     load_dotenv()
-    token = os.environ
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"Authorization": f"Bearer {os.environ['BITLY_KEY']}"}
     if is_bitlink(user_url, headers):
         try:
             print("По вашей ссылке прошли", count_clicks(user_url, headers), "раз(а)")
@@ -95,6 +94,9 @@ if __name__ == "__main__":
     main(args.user_url)
 
 ```
+
+>Пример файла .env (рисунок 4).
++ ![Screenshot_4](https://github.com/dendevkoz/Bitly/blob/main/screenshot/Screenshot_5.png)
 
 
 ### Цель проекта
