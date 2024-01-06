@@ -95,8 +95,8 @@ if __name__ == "__main__":
 
 ```
 
->Пример файла .env (рисунок 4).
-+ ![Screenshot_4](https://github.com/dendevkoz/Bitly/blob/main/screenshot/Screenshot_5.png)
+>Пример работы кода (рисунок 5).
++ ![Screenshot_5](https://github.com/dendevkoz/Bitly/blob/main/screenshot/Screenshot_5.png)
 
 
 ### Цель проекта
